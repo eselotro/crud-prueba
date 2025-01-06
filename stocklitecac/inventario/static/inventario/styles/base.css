@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  header {
+    background-color: #3378FF;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: black;
+    font-size: 45px;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: hwb(170 3% 17%);
+    color: white;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #edf2f4;
+    color: black;
+    padding: 20px;
+    position: fixed;
+    top: 70px; /* Adjust based on header height */
+    left: 0;
+    bottom: 0; /* Ensure the sidebar extends to the bottom */
+    overflow-y: auto; /* Add scroll if needed */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 2rem;
+    border-bottom: 3px solid #545f71; /* Añade un borde inferior */
+    padding-bottom: 50px; /* Ajusta el espacio entre el borde y los elementos */
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center; 
+    padding: 5px;
+    justify-content: left;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #3378FF;
+    color: white;
+    border-radius: 16px;
+    transition: background-color 0.3s, color 0.3s; 
+  }
+
+  main {
+    flex: 1;
+    
+    margin-left: 220px; /* Adjust based on the sidebar width */
+    margin-top: 70px; /* Adjust based on header height */
+  }
+
+  footer {
+    background-color: #3378FF;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .footer-bottom {
+    font-size: 16px;
+  }
+
+.alert .alert-success .sm {
+  padding: 5px;
+  
+  }
+
+/* Estilos para el logo */
+.logo {
+    text-align: center; /* Centra el logo */
+    margin-bottom: 20px; /* Espacio debajo del logo */
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto; /* Asegura que la imagen se ajuste proporcionalmente */
+    max-height: 150px;
+    border-radius: 45px;
+  }
